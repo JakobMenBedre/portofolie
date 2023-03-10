@@ -1,0 +1,192 @@
+*{
+    padding: 0vw;
+    font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} /*gjør at all padding er satt til null ved standard og fonten er gill sans over alt*/
+.texthm{
+    font-size: 20vw;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: top;
+    padding-left: 38vw;
+} /* jeg gjør det meste til viewport width fordi at det gjør at siden er relativ til størrelsen av skjermen i steden for å bli ødelagt når man zoomer ut eller inn.*/
+.texthm span{
+    display: block;
+
+}
+.lesmer{
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+
+}
+.first-text{
+    line-height: 20%;
+    border-color: rgb(255, 255, 255);
+    border-top: 15vw;
+    font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    font-size: 3vw;
+    text-align: left;
+    position: absolute;
+    padding-top: 0vw;
+    top: 22vw;
+    left: 30vw;
+    background-color: transparent;
+    transform: translateX(-90vw);
+    animation: slide-left 2s ease forwards; /*har allerede forklart dette i "om meg".*/
+}
+
+.ommeg{
+    height: 70vw;
+    width: auto;
+    padding-top: 6vw;
+    padding-left: 12vw;
+    margin-left: 5vw;
+    z-index: 1;
+}
+.top-margin {
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    font-weight: bold;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 2vw;
+    font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:0.1vw rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0vw 1vw 2vw rgb(160, 160, 160);
+    text-decoration: none;
+    text-align: center;
+    
+  }
+.top-margin a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1vw;
+}
+.top-margin a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1vw;
+}
+.top-margin a:hover{
+    padding: 1vw;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(179, 179, 179); /*gjør at når man tar musen sin over navbaren så vil bakgrunnen bytte farge. det ser kult ut.*/
+}
+.top-margin a:active{
+    padding: 1vw;
+    color: rgb(0, 0, 0);
+    text-decoration: none; /*jeg har også sørget for at selv om at man har gått inn på lenken så ser den lik ut som om at man ikke har trykket på den.*/
+}
+#link{
+    padding: 1vw;
+}
+.Hproj{
+    font-size: 7vw;
+    top: 50vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.proj{
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.proj a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.proj a:active{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.proj a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.proj a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.ghlink{
+    font-size: 3vw;
+    color: rgb(85, 100, 236);
+    text-align: center;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.ghlink a:hover{
+    color: rgb(85, 100, 236);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.ghlink a:active{
+    color: rgb(85, 100, 236);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.ghlink a:visited{
+    color: rgb(85, 100, 236);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.ghlink a{
+    color: rgb(85, 100, 236);
+    text-decoration: none;
+    outline-width: 3px;
+    outline-color: rgb(255, 255, 255);
+}
+.hkon{
+    color: rgb(0, 0, 0);
+    font-size: 7vw;
+    text-align: center;
+}
+.akon{
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: center;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(90vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+} /*gjør at når slide-down blir brukt så kommer den til å flytte noe 90vw fra sin orginal possisjon til 0vw fra sin orginal possisjon*/
+
+@keyframes slide-side {
+    0% {
+        transform: translateX(180vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(-90vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}

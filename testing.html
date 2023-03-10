@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>about me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+    </style>
+</head>
+
+
+
+<!--dette dokumentet er kun for å teste ting for de andre dokumentene i tilfelle jeg ødelegger noe.-->
+
+
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+
+<section class="top-margin">
+        <div id="link">
+            <a href="hjem.html" target="_blank">Home</a>
+            <a href="om meg.html" target="_blank">About me</a>
+            <a href="prosjekter.html" target="_blank">My projects</a>
+            <a href="kontakt_info.html" target="_blank">Contact me</a>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        </div>
+
+</section>
+<section class="ommeg">
+    <div class = "bilde">
+        <img src="b.png" class="bilde" style="
+        float: right;
+        height: 50vw;
+        width: auto;
+        transform: translateX(90vw);
+        animation: slide-side 2s ease forwards;"
+        > 
+
+    </div>
+    <div class="first-text">
+        <p> My name is Jakob and I  </p>
+        <p> have been interested</p>
+        <p>in learning coding ever since I</p>
+        <p> was 14 years old.</p>
+        <p>I also like playing video games.</p>
+    </div>
+</section>
+<hr>
+<div id="myPlot" style="width:100vw;max-width:100vw; height: 50vw; font-size: 6vw;"></div>
+<script style="font-size: 6vw;">
+var xArray = ["Super Smash Bros. Ultimate","Making Friends","Python","HTML","JavaScript"];
+var yArray = [99, 85, 62, 37, 24];
+
+var data = [{
+  x: xArray,
+  y: yArray,
+  type: "bar"  }];
+var layout = {title:"My Skill Sets"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+<hr>
+</body>
+</html>

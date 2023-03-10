@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact info</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+    </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);overflow: hidden;">
+
+<section class="top-margin">
+        <div id="link">
+            <a href="hjem.html" target="_blank">Home</a>
+            <a href="om meg.html" target="_blank">About me</a>
+            <a href="prosjekter.html" target="_blank">My projects</a>
+            <a href="kontakt_info.html" target="_blank">Contact me</a>
+        </div>
+
+</section>
+<div class="hkon">
+    <p>Contact me:</p>
+</div>
+<div class="akon" id="gmail">
+    Email: Jakobtra@gmail.com <button onclick="copyText()">Copy</button> <!--lager en knapp som sender signalet copytext.-->
+</div>
+
+<script>
+    function copyText() {
+        navigator.clipboard.writeText
+        ("Jakobtra@gmail.com");
+    }
+</script>
+<!--når scriptet tar imot "copy text" så kopierer den mailen min i clipboard.-->
+
+<br>
+
+<div class="akon">
+    Number: +47 47954445 <!--ikke ring meg.-->
+</div>
+
+<div>
+    <img src="OKE CUT.png" alt="_blank"  style="height: 20vw; width: auto; float: left; margin-left: 15vw; margin-top: 3vw;">
+<!--bare ett bilde som er på bunnen av skjermen.-->
+</div>
+<br>
+</body>
+</html>

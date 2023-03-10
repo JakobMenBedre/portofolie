@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>about me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+    </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+
+<section class="top-margin">
+        <div id="link">
+            <a href="hjem.html" target="_blank">Home</a>
+            <a href="om meg.html" target="_blank">About me</a>
+            <a href="prosjekter.html" target="_blank">My projects</a>
+            <a href="kontakt_info.html" target="_blank">Contact me</a>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        </div>
+
+</section>
+<section class="ommeg">
+    <div class = "bilde">
+        <img src="b.png" class="bilde" style="
+        float: right;
+        height: 50vw;
+        width: auto;
+        transform: translateX(90vw);
+        animation: slide-side 2s ease forwards;"
+        > <!--de siste to formlene her forteller bildet at det skal gjøre en animasjon som heter slide-side som man kan finne på bunnen av CSS dokumentet og at animasjonen skal foregå ved at bilder sklir rolig inn.-->
+
+    </div>
+    <div class="first-text">
+        <p> My name is Jakob and I  </p>
+        <p> have been interested</p>
+        <p>in learning coding ever since I</p>
+        <p> was 14 years old.</p>
+        <p>I also like playing video games.</p>
+    </div>
+</section>
+<hr>
+<div id="myPlot" style="width:100vw;max-width:100vw; height: 40vw; font-size: 6vw;"></div>
+<!--gjør om på størrelsen på diagrammet. har også prøvd å gjøre om på skriftstørrelsen, men jeg fikk det ikke helt til...-->
+<script style="font-size: 6vw;">
+    var xArray = ["Cooperating With Others","Python","Working Capasity","HTML","JavaScript"];
+var yArray = [99, 85,72, 61, 43];
+
+var data = [{
+  x: xArray,
+  y: yArray,
+  type: "bar"  }];
+var layout = {title:"My Skill Sets"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+<!--lager ett søylediagram som viser mine egenskaper. funnet på W3schools-->
+<hr>
+<p style="font-size: 4vw;text-align: center;">A few facts about me</p>
+<p style="font-size: 2vw; text-align: center; line-height: 4vw; ">
+I can work both individually and with others <br>
+I like getting things done rather than taking breaks all of the time<br>
+I can work with multiple projects at a time <br>
+Bread is my favorite snack and water is my favorite drink <br>
+I really like fighting games especially 2d fighters
+</p>
+</body>
+</html>
